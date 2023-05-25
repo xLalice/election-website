@@ -5,7 +5,7 @@
   <title>Politician Hub</title>
   <!-- Include CSS stylesheets and JavaScript files as needed -->
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  
 </head>
 <body>
   <header>
@@ -14,7 +14,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a id="contact" href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,67 +27,133 @@
       </form>
     </section>
     <select id="candidate-type">
-      <option value="presidential">Presidential Candidates</option>
+      <option value="president" selected>Presidents</option>
       <option value="vice-president">Vice President</option>
       <option value="senator">Senators</option>
     </select>
-    <h1>Presidential Candidates</h1>
-    <section id="presidential-container">
-      <div class="presidential-candidate">
+    <h1>Candidates</h1>
+    <section id="presidential" class="container">
+      <div class="candidate">
         <img src="resources/bbm.jpg" class="profile-img">
         <h3>Ferdinand Romualdez Marcos Jr.</h3>
         <p>Partido Federal ng Pilipinas</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/leni.png" class="profile-img">
         <h3>Maria Leonor Gerona Robredo</h3>
         <p>Liberal Party</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/ernesto.jpg" class="profile-img">
         <h3>Ernesto Abella </h3>
         <p>Party: Independent</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/leody.jpg" class="profile-img">
         <h3>Leody de Guzman</h3>
         <p>Partido Lakas ng Masa</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/norberto.jpg" class="profile-img">
         <h3>Norberto Gonzales</h3>
         <p>Philippine Democratic Socialist Party</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/faisal.jpg" class="profile-img">
         <h3>Faisal Mangondato</h3>
         <p>Katipunan ng Kamalayang Kayumanggi</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/montemayor.jpg" class="profile-img">
         <h3>Jose Montemayor</h3>
         <p>Democratic Party of the Philippines</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/isko.jpg" class="profile-img">
         <h3>Isko Moreno</h3>
         <p>Aksyon Demokratiko</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/manny.jpg" class="profile-img">
         <h3>Manny Pacquaio</h3>
         <p>Progressive Movement for the Devolution of Initiatives</p>
       </div>
-      <div class="presidential-candidate">
+      <div class="candidate">
         <img src="resources/lacson.jpg" class="profile-img">
         <h3>Panfilo Lacson</h3>
         <p>Independent</p>
       </div>
-      
+    </section>
+    <section id="vice" class="container">
+      <div class="candidate">
+        <img src="resources/atienza.jpg" class="profile-img">
+        <h3>Lito Atienza</h3>
+        <p>Probinsya Muna Development Initiative</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/bello.jpg" class="profile-img">
+        <h3>Walden Bello</h3>
+        <p>Partido Lakas ng Masa</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/david.jpg" class="profile-img">
+        <h3>Rizalito David</h3>
+        <p>Democratic Party of the Philippines</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/duterete.jpg" class="profile-img">
+        <h3>Sarah Duterte</h3>
+        <p>Lakas-Christian Muslim Democrats</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/lopez.jpg" class="profile-img">
+        <h3>Manny SD Lopez</h3>
+        <p>Labor Party Philippines</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/ong.jpg" class="profile-img">
+        <h3>Willie Ong</h3>
+        <p>Aksyon</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/pangilinan.jpg" class="profile-img">
+        <h3>Francis Pangilinan</h3>
+        <p>Liberal Party of the Philippines</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/seraphio.jpg" class="profile-img">
+        <h3>Carlos Serapio</h3>
+        <p>Katipunan ng Kamalayang kayumangggi</p>
+      </div>
+      <div class="candidate">
+        <img src="resources/sotto.jpg" class="profile-img">
+        <h3>Tito Sotto</h3>
+        <p>Nationalist People's Coalition</p>
+      </div>
+    </section>
+    <section id="contact-container" class="container">
+      <form id="contact-form">
+        <h2>Contact Representative</h2>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Enter your message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <div id="error-container"></div>
+      </form>
     </section>
   </main>
   <footer>
     <p>&copy; 2023 Politician Hub. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

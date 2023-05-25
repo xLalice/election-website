@@ -1,17 +1,38 @@
-const candidateTypeDropdown = document.getElementById("candidate-type");
-const candidateListDiv = document.getElementById("candidate-list");
+/* DOM */
+const dropdown = document.getElementById("candidate-type");
+const contentOption1 = document.getElementById('presidential');
+const contentOption2 = document.getElementById('vice');
+const contentOption3 = document.getElementById('contentOption3');
+const contact = document.getElementById("contact");
+const contactContainer = document.getElementById("contact-container");
+const searchSection = document.getElementById("search-section");
+const candidateType = document.getElementById("candidate-type");
 
-candidateTypeDropdown.addEventListener("change", function () {
-  const selectedOption = candidateTypeDropdown.value;
-  let candidates = [];
+/* Event Listeners */
+dropdown.addEventListener('change', function() {
+  const selectedOption = dropdown.value;
 
-  if (selectedOption === "presidential") {
-    candidates = presidentialCandidates;
-  } else if (selectedOption === "vice-president") {
-    candidates = vicePresidentCandidates;
-  } else if (selectedOption === "senator") {
-    candidates = senatorCandidates;
+  if (selectedOption === 'president') {
+    contentOption1.style.display = "flex";
+    contentOption2.style.display = "none";
+    contactContainer.style.display = "none";
+  } else if (selectedOption === 'vice-president') {
+    contentOption1.style.display = "none";
+    contentOption2.style.display = "flex";
+    contactContainer.style.display = "none";
+  } else if (selectedOption === 'option3') {
+    // Show content for option 3
   }
+});
 
-  displayCandidates(candidates);
+contact.addEventListener("click", function() {
+  const heading = document.querySelector("main h1")
+  contactContainer.style.display = "block";
+  contentOption1.style.display = "none";
+  contentOption2.style.display = "none";
+  searchSection.style.display = "none";
+  candidateType.style.display = "none";
+  heading.style.display = "none";
+  
+  
 })
