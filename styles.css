@@ -20,7 +20,8 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 50px;
-  display: flex;;
+  display: flex;
+  align-items: center;
 }
 
 header h1 {
@@ -49,6 +50,10 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+#search-form {
+  margin-left: auto;
 }
 
 main {
@@ -94,8 +99,8 @@ form button {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 10vw;
+  height: 20vh;
   object-fit: cover;
   border-radius: 50%;
 }
