@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #0088FF;
+    --secondary-color: #FF6600;
+    --text-color: #333333;
+    --background-color: #F9F9F9;
+}
+
+/* Styles for candidate profile */
+.candidate-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
+.profile-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.candidate-name {
+  font-size: 34px;
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.candidate-position {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.party-affiliation {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.candidate-details {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.basic-info {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .candidate-profile {
+    max-width: 400px;
+  }
+  
+  .profile-image {
+    width: 150px;
+  }
+  
+  .candidate-name {
+    font-size: 20px;
+  }
+  
+  .candidate-position {
+    font-size: 16px;
+  }
+  
+  .party-affiliation {
+    font-size: 14px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+}
