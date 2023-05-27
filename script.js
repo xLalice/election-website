@@ -24,15 +24,3 @@ dropdown.addEventListener('change', function() {
     // Show content for option 3
   }
 });
-
-contact.addEventListener("click", function() {
-  const heading = document.querySelector("main h1")
-  contactContainer.style.display = "block";
-  contentOption1.style.display = "none";
-  contentOption2.style.display = "none";
-  searchSection.style.display = "none";
-  candidateType.style.display = "none";
-  heading.style.display = "none";
-  
-  
-})
